@@ -33,7 +33,7 @@ void load(char *chess_cfg) {
         chess_board[i][0] = chess_piece(chess_cfg[i])+'0'; chess_board[i][1] = '1';
         chess_board[i+8][0] = chess_piece('P')+'0'; chess_board[i+8][1] = '1';
         
-        chess_board[64-i-1][0] = chess_piece(chess_cfg[i])+'0'; chess_board[64-i-1][1] = '0';
+        chess_board[56+i][0] = chess_piece(chess_cfg[i])+'0'; chess_board[64-i-1][1] = '0';
         chess_board[64-8-i-1][0] = chess_piece('P')+'0'; chess_board[64-8-i-1][1] = '0';
     }
 }
